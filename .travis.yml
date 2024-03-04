@@ -24,7 +24,13 @@ deploy:
   region: "us-west-2"
   app: "mysite"
   env: "django-env"
+  on:
+    repo: maludee/swe1-app
+    branches:    
+      only:     
+        - main 
   # bucket_name: "the-target-S3-bucket"
+
 
 after_script:
   - coveralls
