@@ -15,7 +15,7 @@ script:
   - flake8 .
   - coverage run --source=mysite,polls manage.py 
 
-after_script:
+after_success:
   - coveralls
 
 deploy:
