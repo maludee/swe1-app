@@ -3,6 +3,10 @@ language: python
 python:
   - 3.9
 
+env:
+    coveralls_repo_token:
+        - secure: "QY5GQBZTUfAVFsvvWUsPTkMQc+/zJhTeY8eowM9TeEYng8jrZ0XKZ7kIo5xEhltB845hk48xVb/ZaQi9rXR8v/ZKZGh86KF2GKS24Wf11BiLFqUiS5ZUcl8f33AHqehVMQOE36WfMR+UhgjLA9jAetT03bf1KPXUpk3t7AK3tfJtHk3342yDY01IspzJ/9Kg0mNHOz6oc9WZcK/wQev1tPqCZElbPoj+j17ZJWBjvpTI4426c5ISIRG7IxADdQDCKOSfqVvm+xGHrHhmY6pGJoNKfyJMD0MhdfyrgUFxMFtvhnoGWexA/zfEsXeE7kHbyLO/V8iAQmaAIaQ0Wg2xFWVIferOEIvBAAKOA7KMWnhLbrmwvwWY8g3u85/9hExfUUyQqCVETigNX1TG0GbHDL0hFhiLhnanJIUxA872Y6F+ssyLXx4+Dm0FsKxvPef0qxfEyrmGvVyYI+xxJ+o/xto1h58VZvC2GrpVWHIZNcbkX6HB/bUTzcJaG42BJdsNdDlFUFMKB8A1tjhtSXtjh1/DA8Tzb67Rf78YlCyddkvzOZltfBygRTpO4xPb6E0+bKNlDYVgMKLu/xurAhN5awXbNQUbrbdM1DXMUhSs8TqEr0VZpmg4PF6sRQ6RJLSPTXSRyQoiKBYTSMyOumt1++nBgEbkAX+kXTtbQa4bEO0="
+
 install:
   - pip install -r requirements.txt
 
