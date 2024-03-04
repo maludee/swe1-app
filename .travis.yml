@@ -26,7 +26,7 @@ deploy:
   env: "django-env"
   on:
     repo: maludee/swe1-app
-    branches:    
+    branch:    
       only:     
         - main 
   # bucket_name: "the-target-S3-bucket"
