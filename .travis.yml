@@ -20,7 +20,7 @@ script:
   - coverage run --source=mysite,polls manage.py 
 
 after_success:
-  - coveralls
+    coveralls
 
 deploy:
   provider: elasticbeanstalk
