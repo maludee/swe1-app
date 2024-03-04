@@ -17,7 +17,7 @@ before_script:
 script:
   - black --check .
   - flake8 .
-  # - coverage run --source=mysite,polls manage.py test
+  - coverage run --source=mysite,polls manage.py test
 
 deploy:
   - provider: elasticbeanstalk
@@ -31,7 +31,6 @@ deploy:
     bucket_name: "elasticbeanstalk-us-west-2-228263200732"
     on:
       branch: main
-
 
 after_success:
   - coveralls
