@@ -15,6 +15,9 @@ script:
   - flake8 .
   - coverage run --source=mysite,polls manage.py 
 
+after_script:
+  - coveralls
+
 deploy:
   provider: elasticbeanstalk
   access_key_id:
@@ -30,7 +33,3 @@ deploy:
       only:     
         - main 
   # bucket_name: "the-target-S3-bucket"
-
-
-after_script:
-  - coveralls
