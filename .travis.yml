@@ -29,11 +29,11 @@ deploy:
     app: "mysite"
     env: "django-env"
     bucket_name: "elasticbeanstalk-us-west-2-228263200732"
-    on:
-      repo: maludee/swe1-app
-      branch:    
-        only:     
-          - main 
+    # on:
+    #   repo: maludee/swe1-app
+    #   branch:    
+    #     only:     
+    #       - main 
 
 after_success:
   - coveralls
